@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy New Year ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="fireworks"></canvas>
+
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightboxImg">
+</div>
+
+<audio id="bgMusic" src="music.mp3" loop></audio>
+
+<div class="overlay">
+  <button onclick="startSurprise()">Tap to Begin 💖</button>
+</div>
+
+<section class="hero hidden" id="hero">
+  <h1 id="heroTitle">Happy New Year ❤️</h1>
+  <p id="heroSub">Some memories unlock only when love speaks ✨</p>
+</section>
+
+<section class="nameUnlock hidden" id="nameSection">
+  <p>Enter your name to continue 💌</p>
+  <input type="text" id="nameInput" placeholder="Your name">
+  <button onclick="checkName()">Unlock 🔐</button>
+  <p id="error"></p>
+</section>
+
+<section class="gallery hidden" id="gallery">
+  <h2>Tap each heart to unlock 💕</h2>
+  <div class="photos">
+    <div class="photo" data-id="1">❤️</div>
+    <div class="photo" data-id="2">❤️</div>
+    <div class="photo" data-id="3">❤️</div>
+    <div class="photo" data-id="4">❤️</div>
+    <div class="photo" data-id="5">❤️</div>
+    <div class="photo" data-id="6">❤️</div>
+  </div>
+</section>
+
+<section class="letter hidden" id="letter">
+  <h2 id="letterTitle">For You ❤️</h2>
+  <p id="letterText"></p>
+</section>
+
+<footer class="hidden">
+  <p>Made with love ❤️</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
